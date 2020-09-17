@@ -1,17 +1,7 @@
 import React from 'react';
+import Planets from '../planets.json';
 
 function PlanetCard() {
-	const Planets = [
-		{ id: '1', name: 'Mercury', imgPath: '../img/mercury.png' },
-		{ id: '2', name: 'Venus', imgPath: '../img/venus.png' },
-		{ id: '3', name: 'Earth', imgPath: '../img/earth.png' },
-		{ id: '4', name: 'Mars', imgPath: '../img/mars.png' },
-		{ id: '5', name: 'Jupiter', imgPath: '../img/jupiter.png' },
-		{ id: '6', name: 'Saturn', imgPath: '../img/saturn.png' },
-		{ id: '7', name: 'Uranus', imgPath: '../img/uranus.png' },
-		{ id: '8', name: 'Neptune', imgPath: '../img/neptune.png' },
-	];
-
 	return Planets.map((planetInfo) => {
 		return (
 			<div
