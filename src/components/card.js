@@ -14,7 +14,14 @@ function PlanetCard() {
 
 	return Planets.map((planetInfo) => {
 		return (
-			<div className="card-container" key={planetInfo.id}>
+			<div
+				className={
+					Number(planetInfo.id) === 8
+						? 'card-container last-card'
+						: 'card-container'
+				}
+				key={planetInfo.id}
+			>
 				<img
 					className="planet"
 					src={planetInfo.imgPath}
