@@ -2,18 +2,26 @@ import React from 'react';
 
 function PlanetCard() {
 	const Planets = [
-		['Mars', '../img/mars.png'],
-		['Earth', '../img/earth.png'],
-		['Venus', '../img/earth.png'],
-		['Saturn', '../img/saturn.png'],
+		{ id: '1', name: 'Mercury', imgPath: '../img/mercury.png' },
+		{ id: '2', name: 'Venus', imgPath: '../img/venus.png' },
+		{ id: '3', name: 'Earth', imgPath: '../img/earth.png' },
+		{ id: '4', name: 'Mars', imgPath: '../img/mars.png' },
+		{ id: '5', name: 'Jupiter', imgPath: '../img/jupiter.png' },
+		{ id: '6', name: 'Saturn', imgPath: '../img/saturn.png' },
+		{ id: '7', name: 'Uranus', imgPath: '../img/uranus.png' },
+		{ id: '8', name: 'Neptune', imgPath: '../img/neptune.png' },
 	];
-	const planetsNamesList = Planets.map(function (name) {
-		const ImgPlanet = <img className="planet" src={name[1]} alt={name[0]} />;
+
+	return Planets.map((planetInfo) => {
 		return (
-			<div className="card-container">
-				{ImgPlanet}
+			<div className="card-container" key={planetInfo.id}>
+				<img
+					className="planet"
+					src={planetInfo.imgPath}
+					alt={planetInfo.name}
+				/>
 				<div className="card">
-					<h1>{name[0]}</h1>
+					<h1>{planetInfo.name}</h1>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magni
 						rerum quo ipsa hic quidem temporibus corporis totam adipisci
@@ -28,8 +36,6 @@ function PlanetCard() {
 			</div>
 		);
 	});
-
-	return <div>{planetsNamesList}</div>;
 }
 
 export default PlanetCard;
