@@ -1,12 +1,13 @@
 import React from 'react';
+import PlanetCard from '../components/card';
 
-function Home() {
+const Home = () => {
 	return (
-		<div className="page">
-			<h1>Home</h1>
-			<p>This is the home page.</p>
+		<div>
+			<PlanetCard />
+			{/* <PlanetCard /> */}
 		</div>
 	);
-}
+};
 
 export default Home;
