@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 
 //Import components
-import Navsticky from './components/nav';
+import Navsticky from './components/nav/nav';
 
-function App() {
+const App = () => {
 	return <Navsticky />;
-}
+};
 
 export default App;

@@ -1,12 +1,8 @@
 import React from 'react';
+import PlanetCard from '../components/card/card';
 
 function Planets() {
-	return (
-		<div className="page">
-			<h1>Planets</h1>
-			<p>This is the planets page.</p>
-		</div>
-	);
+  return <PlanetCard />;
 }
 
 export default Planets;

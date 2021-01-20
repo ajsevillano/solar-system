@@ -1,5 +1,6 @@
 import React from 'react';
-import Planets from '../planets.json';
+import './card.css';
+import Planets from '../../planets.json';
 
 function PlanetCard() {
 	return Planets.map((planetInfo) => {
