@@ -27,7 +27,12 @@
 
 .card h1 {
   font-size: 40px;
-  padding: 0 0 10px 0;
+  padding: 0 0 6px 0;
+}
+
+.card h2 {
+  font-size: 20px;
+  padding: 0 0 6px 0;
 }
 
 .card p {
