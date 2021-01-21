@@ -1,0 +1,79 @@
+.card-skeleton {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 20px 0 20px 0px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 100px 20px 50px 20px;
+}
+
+.p-skeleton {
+  width: 93%;
+  height: 16px;
+
+  margin-bottom: 15px;
+}
+
+.h2-skeleton {
+  width: 28%;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.h1-skeleton {
+  width: 23%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 12px;
+}
+
+.img-skeleton {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-150%);
+}
+
+.img-skeleton,
+.h1-skeleton,
+.h2-skeleton,
+.p-skeleton {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: linear-gradient(
+    to right,
+    rgb(231, 231, 231) 8%,
+    #f0f0f0 18%,
+    rgb(231, 231, 231) 33%
+  );
+  background-size: 800px 104px;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+//Mobile styles
+@media screen and (max-width: 768px) {
+  .h2-skeleton {
+    width: 54%;
+  }
+
+  .h1-skeleton {
+    width: 45%;
+  }
+}

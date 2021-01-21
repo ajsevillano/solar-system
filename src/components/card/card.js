@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import './card.scss';
 
+// Components
+import Skeleton from '../skeletons/Skeleton';
+
 const PlanetCard = () => {
   //State
   const [planetInfo, setPlanetInfo] = useState(null);
@@ -17,7 +20,11 @@ const PlanetCard = () => {
   return (
     <div>
       {/* If the content haven't been fetch yet... */}
-      {!planetInfo && <div>Loading...</div>}
+      {!planetInfo && (
+        <div>
+          <Skeleton PlanetList={planetInfo} />
+        </div>
+      )}
 
       {/* When the content is fetch and stored in the state... */}
       {planetInfo &&
