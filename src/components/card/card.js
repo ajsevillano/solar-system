@@ -11,7 +11,7 @@ const PlanetCard = () => {
   //UseEffect
   useEffect(() => {
     setTimeout(async () => {
-      const result = await fetch('planets.json');
+      const result = await fetch('./planets.json');
       const data = await result.json();
       setPlanetInfo(data);
     }, 1000);
@@ -24,7 +24,8 @@ const PlanetCard = () => {
   return (
     <div>
       {/* If the content haven't been fetch yet... */}
-      {!planetInfo && skeletonBlock.map((planet) => <Skeleton />)}
+      {!planetInfo &&
+        skeletonBlock.map((number, index) => <Skeleton key={index} />)}
 
       {/* When the content is fetch and stored in the state... */}
       {planetInfo &&
