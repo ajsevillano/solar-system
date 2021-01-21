@@ -2,17 +2,6 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import './card.scss';
 
-// import Planets from '../../planets.json';
-
-// function PlanetCard() {
-//   return Planets.map((planetInfo) => {
-//     return (
-
-//       </div>
-//     );
-//   });
-// }
-
 const PlanetCard = () => {
   //State
   const [planetInfo, setPlanetInfo] = useState(null);
