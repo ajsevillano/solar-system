@@ -22,7 +22,7 @@ const PlanetCard = () => {
       {/* If the content haven't been fetch yet... */}
       {!planetInfo && (
         <div>
-          <Skeleton PlanetList={planetInfo} />
+          <Skeleton />
         </div>
       )}
 
