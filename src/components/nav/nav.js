@@ -8,7 +8,7 @@ import Planets from '../../pages/planets';
 
 function Navsticky() {
   return (
-    <Router>
+    <Router basename={'/projects/solar-system'}>
       <nav className="botton-menu">
         <div className="menu-buttons">
           <svg

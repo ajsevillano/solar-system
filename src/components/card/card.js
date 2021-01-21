@@ -8,23 +8,23 @@ import Skeleton from '../skeletons/Skeleton';
 const PlanetCard = () => {
   //State
   const [planetInfo, setPlanetInfo] = useState(null);
-
+  //UseEffect
   useEffect(() => {
     setTimeout(async () => {
-      const result = await fetch('./planets.json');
+      const result = await fetch('planets.json');
       const data = await result.json();
       setPlanetInfo(data);
-    }, 2000);
+    }, 1000);
   }, []);
+
+  //Variables
+  let numberOfSquares = 8;
+  let skeletonBlock = Array.apply(null, Array(numberOfSquares));
 
   return (
     <div>
       {/* If the content haven't been fetch yet... */}
-      {!planetInfo && (
-        <div>
-          <Skeleton />
-        </div>
-      )}
+      {!planetInfo && skeletonBlock.map((planet) => <Skeleton />)}
 
       {/* When the content is fetch and stored in the state... */}
       {planetInfo &&
