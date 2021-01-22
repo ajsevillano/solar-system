@@ -11,7 +11,7 @@ const PlanetCard = () => {
   //UseEffect
   useEffect(() => {
     setTimeout(async () => {
-      const result = await fetch('./planets.json');
+      const result = await fetch('./data.json');
       const data = await result.json();
       setPlanetInfo(data);
     }, 1000);
