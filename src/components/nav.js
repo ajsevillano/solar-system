@@ -1,10 +1,9 @@
 import React from 'react';
-import './nav.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import Home from '../../pages/home';
-import Planets from '../../pages/planets';
+import Home from '../pages/home';
+import Planets from '../pages/planets';
 
 function Navsticky() {
   return (

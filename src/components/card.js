@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import './card.scss';
 
 // Components
-import Skeleton from '../skeletons/Skeleton';
+import Skeleton from './Skeleton';
 
 const PlanetCard = () => {
   //State
@@ -14,7 +13,7 @@ const PlanetCard = () => {
       const result = await fetch('./data.json');
       const data = await result.json();
       setPlanetInfo(data);
-    }, 1000);
+    }, 500);
   }, []);
 
   //Variables

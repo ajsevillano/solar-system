@@ -1,11 +1,13 @@
 import React from 'react';
-import './App.css';
+
+//Import Styles
+import './styles/main.scss';
 
 //Import components
-import Navsticky from './components/nav/nav';
+import Navsticky from './components/nav';
 
 const App = () => {
-	return <Navsticky />;
+  return <Navsticky />;
 };
 
 export default App;

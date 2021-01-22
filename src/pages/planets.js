@@ -1,5 +1,5 @@
 import React from 'react';
-import PlanetCard from '../components/card/card';
+import PlanetCard from '../components/card';
 
 function Planets() {
   return <PlanetCard />;
