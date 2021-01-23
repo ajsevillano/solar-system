@@ -1,10 +1,22 @@
+$white: white;
+
 .scroll_container {
   display: flex;
   flex-direction: column;
 
-  h1 {
+  h1,
+  h3 {
     color: white;
-    margin: 20px 0 20px 20px;
+  }
+
+  h1 {
+    margin: 20px 0 10px 20px;
+  }
+
+  h3 {
+    margin: 0px 0 20px 20px;
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 
@@ -25,10 +37,10 @@
   justify-content: center;
   height: 100%;
   margin: 0px 20px 40px 0px;
-  width: 30%;
+  width: 60%;
   max-width: 300px;
   border-radius: 10px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 0px 10px 0px;
 }
 
 .scroll_cards_container::-webkit-scrollbar {
@@ -36,6 +48,6 @@
 }
 
 .scroll_planet {
-  width: 160px;
-  height: 140px;
+  width: 140px;
+  height: 120px;
 }
