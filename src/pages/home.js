@@ -1,10 +1,10 @@
 import React from 'react';
+import Scroll from '../components/home/Scroll';
 
 const Home = () => {
   return (
     <div className="page">
-      <h1>Planets</h1>
-      <p>This is the planets page.</p>
+      <Scroll />
     </div>
   );
 };
