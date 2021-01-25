@@ -3,7 +3,11 @@ const Scroll = () => {
   return (
     <div className="scroll_container">
       <h1>The planets</h1>
-      <h3>The 8 planets of the solar system</h3>
+
+      <div className="subheaders">
+        <h3>The 8 planets </h3>
+        <p>SEE ALL</p>
+      </div>
       <div className="scroll_cards_container">
         <div className="scroll_card">
           <img className="scroll_planet" src="./img/mercury.png" alt="" />

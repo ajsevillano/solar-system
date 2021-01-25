@@ -4,19 +4,28 @@ $white: white;
   display: flex;
   flex-direction: column;
 
-  h1,
-  h3 {
-    color: white;
-  }
-
   h1 {
     margin: 20px 0 10px 20px;
+    color: $white;
   }
+}
+
+.subheaders {
+  display: flex;
+  flex-direction: row;
+  color: $white;
 
   h3 {
     margin: 0px 0 20px 20px;
     font-size: 1rem;
     font-weight: 400;
+
+    flex: 1;
+  }
+
+  p {
+    align-self: flex-end;
+    margin: 0px 20px 20px 0px;
   }
 }
 
@@ -52,6 +61,6 @@ $white: white;
 }
 
 .scroll_planet {
-  width: 140px;
-  height: 120px;
+  width: 115px;
+  height: 100px;
 }
