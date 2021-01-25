@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Home from '../pages/home';
 import Planets from '../pages/planets';
 
-function Navsticky() {
+function Navsticky({ planetInfo }) {
   return (
     <Router>
       <nav className="botton-menu">
@@ -94,7 +94,11 @@ function Navsticky() {
         </div>
       </nav>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route
+          path="/"
+          exact
+          render={(props) => <Home {...props} title={planetInfo} />}
+        />
         <Route path="/planets" component={Planets} />
       </Switch>
     </Router>

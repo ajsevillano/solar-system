@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 //Import Styles
 import './styles/main.scss';
@@ -7,7 +7,18 @@ import './styles/main.scss';
 import Navsticky from './components/nav';
 
 const App = () => {
-  return <Navsticky />;
+  //State
+  const [planetInfo, setPlanetInfo] = useState([]);
+  //UseEffect
+  useEffect(() => {
+    setTimeout(async () => {
+      const result = await fetch('./data.json');
+      const data = await result.json();
+      setPlanetInfo(data);
+    }, 500);
+  }, []);
+
+  return <Navsticky planetInfo={planetInfo} />;
 };
 
 export default App;
