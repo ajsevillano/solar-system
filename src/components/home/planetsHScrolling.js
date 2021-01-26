@@ -1,18 +1,15 @@
 import React from 'react';
 const planetsHScrolling = ({ planetsData }) => {
   const HandlePlanetData = () => {
-    //Filter only the planets
-    let PlanetsFilter = planetsData.filter(
-      (planets) => planets.type === 'planet'
-    );
-
-    //Create the card with the Planet information from the filter
-    return PlanetsFilter.map((planetCard) => (
-      <div className="scroll_card" key={planetCard.id}>
-        <img className="scroll_planet" src={planetCard.imgPath} alt="" />
-        <h2>{planetCard.name}</h2>
-      </div>
-    ));
+    //Filter and map only the planets
+    return planetsData
+      .filter((planets) => planets.type === 'planet')
+      .map((planetCard) => (
+        <div className="scroll_card" key={planetCard.id}>
+          <img className="scroll_planet" src={planetCard.imgPath} alt="" />
+          <h2>{planetCard.name}</h2>
+        </div>
+      ));
   };
 
   return (
