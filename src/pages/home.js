@@ -1,15 +1,10 @@
 import React from 'react';
 import Scroll from '../components/home/Scroll';
 
-const Home = ({ title }) => {
-  const HandlePlanetData = () => {
-    return title.map((home) => <div key={home.id}>{home.name}</div>);
-  };
-
+const Home = ({ planetsData }) => {
   return (
     <div className="page">
-      {HandlePlanetData()}
-      <Scroll />
+      <Scroll planetsData={planetsData} />
     </div>
   );
 };

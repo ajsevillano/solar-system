@@ -97,7 +97,7 @@ function Navsticky({ planetInfo }) {
         <Route
           path="/"
           exact
-          render={(props) => <Home {...props} title={planetInfo} />}
+          render={(props) => <Home {...props} planetsData={planetInfo} />}
         />
         <Route path="/planets" component={Planets} />
       </Switch>
