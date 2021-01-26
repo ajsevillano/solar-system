@@ -1,50 +1,66 @@
 [
   {
     "id": "1",
+    "type": "planet",
     "name": "Mercury",
     "imgPath": "./img/mercury.png",
     "diameter": "4.879 km"
   },
   {
     "id": "2",
+    "type": "planet",
     "name": "Venus",
     "imgPath": "./img/venus.png",
     "diameter": "12.104 km"
   },
   {
     "id": "3",
+    "type": "planet",
     "name": "Earth",
     "imgPath": "./img/earth.png",
     "diameter": "12.742 km"
   },
   {
     "id": "4",
+    "type": "planet",
     "name": "Mars",
     "imgPath": "./img/mars.png",
     "diameter": "6.779 km"
   },
   {
     "id": "5",
+    "type": "planet",
     "name": "Jupiter",
     "imgPath": "./img/jupiter.png",
     "diameter": "139.820 km"
   },
   {
     "id": "6",
+    "type": "planet",
     "name": "Saturn",
     "imgPath": "./img/saturn.png",
     "diameter": "116.460 km"
   },
   {
     "id": "7",
+    "type": "planet",
     "name": "Uranus",
     "imgPath": "./img/uranus.png",
     "diameter": "50.724 km"
   },
   {
     "id": "8",
+    "type": "planet",
     "name": "Neptune",
     "imgPath": "./img/neptune.png",
+    "diameter": "49.244 km"
+  },
+
+  {
+    "id": "9",
+    "type": "star",
+    "name": "Sun",
+    "imgPath": "./img/sun.png",
     "diameter": "49.244 km"
   }
 ]
