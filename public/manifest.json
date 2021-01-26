@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Our solar system",
+  "name": "Our solar system",
+  "description": "An app about solar system",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +22,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "linear-gradient(7deg, #322956 7%, #10436e 100%)"
 }
