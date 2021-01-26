@@ -11,28 +11,28 @@ const othersHScrolling = ({ planetsData }) => {
   };
 
   return (
-  <section id="others">
+    <section id="others">
       <h1>Others</h1>
 
       <div className="subheaders">
         <h3>Another objects in the solar system</h3>
         <p>SEE ALL</p>
       </div>
-      <div className="scroll_cards_container">
-        <div className="scroll_card">
-          <img className="scroll_planet" src="./img/mercury.png" alt="" />
+      <div className="scroll_others_container">
+        <div className="other_card">
+          <img className="scroll_planet" src="./img/moon.png" alt="" />
           <h2>Moons</h2>
         </div>
-        <div className="scroll_card">
-          <img className="scroll_planet" src="./img/venus.png" alt="" />
+        <div className="other_card">
+          <img className="scroll_planet" src="./img/meteor.png" alt="" />
           <h2>Asteroids</h2>
         </div>
-        <div className="scroll_card">
-          <img className="scroll_planet" src="./img/earth.png" alt="" />
+        <div className="other_card">
+          <img className="scroll_planet" src="./img/comets.png" alt="" />
           <h2>Comets</h2>
         </div>
       </div>
-</section>
+    </section>
   );
 };
 

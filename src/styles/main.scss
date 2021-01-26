@@ -4,6 +4,7 @@
 @import './nav';
 @import './skeleton';
 @import './home/_planetsHScrolling';
+@import './home/othersHScrolling';
 @import './home/_sun';
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
@@ -29,8 +30,8 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(7deg, #322956 7%, #10436e 100%);
-  // Future implementation
-  // background-image: url('/img/stars.png'),
-  // linear-gradient(7deg, #322956 7%, #10436e 100%);
+  // background: linear-gradient(7deg, #322956 37%, #04243f 100%);
+  background-image: url('/img/bg.png');
+  background-image: url('/img/stars.png'),
+    linear-gradient(7deg, #322956 37%, #04243f 100%);
 }
