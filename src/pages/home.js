@@ -3,7 +3,7 @@ import Scroll from '../components/home/Scroll';
 
 const Home = ({ planetsData }) => {
   return (
-    <div className="page">
+    <div className="scroll_container">
       <Scroll planetsData={planetsData} />
     </div>
   );

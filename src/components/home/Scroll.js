@@ -11,15 +11,14 @@ const Scroll = ({ planetsData }) => {
   };
 
   return (
-    <div className="scroll_container">
+    <React.Fragment>
       <h1>The planets</h1>
-
       <div className="subheaders">
         <h3>The 8 planets </h3>
         <p>SEE ALL</p>
       </div>
       <div className="scroll_cards_container">{HandlePlanetData()}</div>
-    </div>
+    </React.Fragment>
   );
 };
 
