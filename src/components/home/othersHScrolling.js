@@ -11,7 +11,7 @@ const othersHScrolling = ({ planetsData }) => {
   };
 
   return (
-   <div className="scroll_container">
+  <section id="others">
       <h1>Others</h1>
 
       <div className="subheaders">
@@ -32,7 +32,7 @@ const othersHScrolling = ({ planetsData }) => {
           <h2>Comets</h2>
         </div>
       </div>
-    </div>
+</section>
   );
 };
 

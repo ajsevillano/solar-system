@@ -11,14 +11,14 @@ const planetsHScrolling = ({ planetsData }) => {
   };
 
   return (
-    <React.Fragment>
+  <section id="planets">
       <h1>The planets</h1>
       <div className="subheaders">
         <h3>The 8 planets </h3>
         <p>SEE ALL</p>
       </div>
       <div className="scroll_cards_container">{HandlePlanetData()}</div>
-    </React.Fragment>
+    </section>
   );
 };
 
