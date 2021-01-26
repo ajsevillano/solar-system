@@ -1,10 +1,10 @@
 import React from 'react';
-import Scroll from '../components/home/Scroll';
+import Planetsscroll from '../components/home/planetsHScrolling';
 
 const Home = ({ planetsData }) => {
   return (
     <div className="scroll_container">
-      <Scroll planetsData={planetsData} />
+      <Planetsscroll planetsData={planetsData} />
     </div>
   );
 };

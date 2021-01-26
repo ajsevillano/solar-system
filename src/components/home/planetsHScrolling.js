@@ -1,5 +1,5 @@
 import React from 'react';
-const Scroll = ({ planetsData }) => {
+const planetsHScrolling = ({ planetsData }) => {
   //Create the card with the Planet information passed in the prop
   const HandlePlanetData = () => {
     return planetsData.map((planetCard) => (
@@ -22,4 +22,4 @@ const Scroll = ({ planetsData }) => {
   );
 };
 
-export default Scroll;
+export default planetsHScrolling;
