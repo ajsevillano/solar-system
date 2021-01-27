@@ -1,4 +1,6 @@
 import React from 'react';
+
+//Components
 import Planetsscroll from '../components/home/planetsHScrolling';
 import Otherssscroll from '../components/home/othersHScrolling';
 import Suncard from '../components/home/sun';
