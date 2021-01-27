@@ -1,6 +1,7 @@
 import React from 'react';
 
 //Import skeleton component
+import SkeletonPlanets from './skeletons/skeletonPlanets';
 
 const planetsHScrolling = ({ planetsData }) => {
   console.log(planetsData);
@@ -25,7 +26,7 @@ const planetsHScrolling = ({ planetsData }) => {
       </div>
       {/* load a preload skeleton meanwhile the data is fetch */}
       {!planetsData ? (
-        <h1>Loading...</h1>
+        <SkeletonPlanets />
       ) : (
         <div className="scroll_cards_container">{HandlePlanetData()}</div>
       )}
