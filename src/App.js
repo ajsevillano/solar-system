@@ -8,7 +8,7 @@ import Navsticky from './components/nav';
 
 const App = () => {
   //State
-  const [planetInfo, setPlanetInfo] = useState([]);
+  const [planetInfo, setPlanetInfo] = useState(null);
   //UseEffect
   useEffect(() => {
     setTimeout(async () => {
