@@ -5,7 +5,7 @@ import SkeletonPlanets from './skeletons/skeletonPlanets';
 
 const planetsHScrolling = ({ planetsData }) => {
   //Variables
-  let numberOfSquares = 8;
+  let numberOfSquares = 3;
   let skeletonBlock = Array.apply(null, Array(numberOfSquares));
 
   const HandlePlanetData = () => {

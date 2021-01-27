@@ -25,6 +25,10 @@
   padding-right: 0.02px;
 }
 
+.skeleton-planet-card-container::-webkit-scrollbar {
+  display: none;
+}
+
 .img-skeleton-planet {
   width: 100px;
   height: 100px;

@@ -15,7 +15,7 @@ const App = () => {
       const result = await fetch('./data.json');
       const data = await result.json();
       setPlanetInfo(data);
-    }, 500);
+    }, 4500);
   }, []);
 
   return <Navsticky planetInfo={planetInfo} />;
