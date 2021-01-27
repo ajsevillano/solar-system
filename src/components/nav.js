@@ -55,23 +55,23 @@ function Navsticky({ planetInfo }) {
         <div className="menu-buttons">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="icon icon-tabler icon-tabler-news"
+            class="icon icon-tabler icon-tabler-comet"
             width="32"
             height="32"
             viewBox="0 0 24 24"
-            strokeWidth="1.5"
+            stroke-width="1.5"
             stroke="#2c3e50"
             fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-            <path stroke="none" d="M0 0h24v24H0z" />
-            <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
-            <line x1="8" y1="8" x2="12" y2="8" />
-            <line x1="8" y1="12" x2="12" y2="12" />
-            <line x1="8" y1="16" x2="12" y2="16" />
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M15.5 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" />
+            <line x1="4" y1="4" x2="11" y2="11" />
+            <line x1="9" y1="4" x2="12.5" y2="7.5" />
+            <line x1="4" y1="9" x2="7.5" y2="12.5" />
           </svg>
-          <p>news</p>
+          <p>Others</p>
         </div>
         <div className="menu-buttons">
           <svg
