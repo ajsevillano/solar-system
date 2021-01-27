@@ -1,5 +1,7 @@
 import React from 'react';
 
+//Import skeleton component
+
 const planetsHScrolling = ({ planetsData }) => {
   const HandlePlanetData = () => {
     //Filter and map only the planets
@@ -20,7 +22,11 @@ const planetsHScrolling = ({ planetsData }) => {
         <h3>The 8 planets </h3>
         <p>SEE ALL</p>
       </div>
-      <div className="scroll_cards_container">{HandlePlanetData()}</div>
+
+      {planetsData != '' && (
+        <div className="scroll_cards_container">{HandlePlanetData()}</div>
+      )}
+      {planetsData == '' && <h1>Loading...</h1>}
     </section>
   );
 };
