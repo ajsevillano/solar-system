@@ -4,7 +4,10 @@ import React from 'react';
 import SkeletonPlanets from './skeletons/skeletonPlanets';
 
 const planetsHScrolling = ({ planetsData }) => {
-  console.log(planetsData);
+  //Variables
+  let numberOfSquares = 8;
+  let skeletonBlock = Array.apply(null, Array(numberOfSquares));
+
   const HandlePlanetData = () => {
     //Filter and map only the planets
     return planetsData
@@ -26,7 +29,11 @@ const planetsHScrolling = ({ planetsData }) => {
       </div>
       {/* load a preload skeleton meanwhile the data is fetch */}
       {!planetsData ? (
-        <SkeletonPlanets />
+        <div className="skeleton-planet-card-container">
+          {skeletonBlock.map((number, index) => (
+            <SkeletonPlanets key={index} />
+          ))}
+        </div>
       ) : (
         <div className="scroll_cards_container">{HandlePlanetData()}</div>
       )}
