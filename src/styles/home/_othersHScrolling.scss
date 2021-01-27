@@ -4,6 +4,7 @@ $white: white;
   display: flex;
   overflow-x: auto;
   margin-bottom: 100px;
+  justify-content: space-between;
 }
 
 .other_card {
@@ -35,4 +36,16 @@ $white: white;
 .scroll_planet {
   width: 115px;
   height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .other_card {
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  .scroll_others_container {
+    justify-content: left;
+  }
 }

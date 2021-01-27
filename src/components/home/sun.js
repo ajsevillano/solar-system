@@ -5,7 +5,7 @@ const sun = () => {
     <section id="sun">
       <h1>The sun</h1>
       <div className="subheaders">
-        <h3>Our magnificent start</h3>
+        <h3>Our magnificent star</h3>
         <p>LEARN MORE</p>
       </div>
       <div className="sun-card-container">
