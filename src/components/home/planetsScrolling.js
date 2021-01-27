@@ -1,11 +1,11 @@
 import React from 'react';
 
 //Import skeleton component
-import SkeletonPlanets from './skeletons/skeletonPlanets';
+import SkeletonPlanets from './skeletons/skeletonHome';
 
 const planetsHScrolling = ({ planetsData }) => {
   //Variables
-  let numberOfSquares = 3;
+  let numberOfSquares = 8;
   let skeletonBlock = Array.apply(null, Array(numberOfSquares));
 
   const HandlePlanetData = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-const othersHScrolling = ({ planetsData }) => {
+const othersScrolling = ({ planetsData }) => {
   //Create the card with the Planet information passed in the prop
   const HandlePlanetData = () => {
     return planetsData.map((planetCard) => (
@@ -36,4 +36,4 @@ const othersHScrolling = ({ planetsData }) => {
   );
 };
 
-export default othersHScrolling;
+export default othersScrolling;

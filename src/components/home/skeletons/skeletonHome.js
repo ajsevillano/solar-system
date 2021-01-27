@@ -1,6 +1,6 @@
 import React from 'react';
 
-const skeletonPScrolling = () => {
+const skeletonHome = () => {
   return (
     <div className="skeleton-planet-card">
       <div className="img-skeleton-planet"></div>
@@ -9,4 +9,4 @@ const skeletonPScrolling = () => {
   );
 };
 
-export default skeletonPScrolling;
+export default skeletonHome;

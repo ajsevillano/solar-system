@@ -1,8 +1,8 @@
 import React from 'react';
 
 //Components
-import Planetsscroll from '../components/home/planetsHScrolling';
-import Otherssscroll from '../components/home/othersHScrolling';
+import Planetsscroll from '../components/home/planetsScrolling';
+import Otherssscroll from '../components/home/othersScrolling';
 import Suncard from '../components/home/sun';
 
 const Home = ({ planetsData }) => {
