@@ -7,7 +7,7 @@ import Suncard from '../components/home/sun';
 
 const Home = ({ planetsData }) => {
   return (
-    <div className="scroll_container">
+    <div className="main-container">
       <Planetsscroll planetsData={planetsData} />
       <Suncard />
       <Otherssscroll planetsData={planetsData} />

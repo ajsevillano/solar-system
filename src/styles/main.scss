@@ -6,11 +6,10 @@ $app-background-gradient: linear-gradient(7deg, #322956 37%, #04243f 100%);
 
 // Partial styles
 
-@import './card';
 @import './nav';
 @import './skeleton';
-@import './home/_planetsHScrolling';
-@import './home/_sun';
+@import './home';
+@import './planets';
 @import './skeletons/skeletonPlanetScrolling';
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
@@ -34,4 +33,18 @@ html {
   background-repeat: no-repeat;
   background-image: url('/img/bg.png');
   background-image: url('/img/stars.png'), $app-background-gradient;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin: 20px 0 10px 20px;
+    color: $white;
+  }
+
+  h2 {
+    color: $dark-font-color;
+  }
 }
