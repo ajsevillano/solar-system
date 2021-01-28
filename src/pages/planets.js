@@ -1,8 +1,8 @@
 import React from 'react';
 import PlanetCard from '../components/planets/card';
 
-function Planets() {
-  return <PlanetCard />;
-}
+const Planets = ({ planetsData }) => {
+  return <PlanetCard planetsData={planetsData} />;
+};
 
 export default Planets;

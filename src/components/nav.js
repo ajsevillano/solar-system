@@ -98,7 +98,11 @@ function Navsticky({ planetInfo }) {
           exact
           render={(props) => <Home {...props} planetsData={planetInfo} />}
         />
-        <Route path="/planets" component={Planets} />
+        <Route
+          path="/planets"
+          exact
+          render={(props) => <Planets {...props} planetsData={planetInfo} />}
+        />
       </Switch>
     </Router>
   );
