@@ -7,10 +7,10 @@ $app-background-gradient: linear-gradient(7deg, #322956 37%, #04243f 100%);
 // Partial styles
 
 @import './nav';
-@import './skeleton';
+@import './skeletons/_planets';
 @import './home';
 @import './planets';
-@import './skeletons/skeletonPlanetScrolling';
+@import './skeletons/_home';
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
 
