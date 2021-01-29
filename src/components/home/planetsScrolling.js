@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 //Import skeleton component
 import SkeletonPlanets from './skeletons/skeletonHome';
@@ -25,7 +26,9 @@ const planetsHScrolling = ({ planetsData }) => {
       <h1>The planets</h1>
       <div className="subheaders">
         <h3>The 8 planets </h3>
-        <p>SEE ALL</p>
+        <p>
+          <Link to="/planets">SEE ALL</Link>
+        </p>
       </div>
       {/* load a preload skeleton meanwhile the data is fetch */}
       {!planetsData ? (
