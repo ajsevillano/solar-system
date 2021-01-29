@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { fetchData } from './utils';
 
 //Import Styles
 import './styles/main.scss';
@@ -7,19 +8,13 @@ import './styles/main.scss';
 import Navsticky from './components/nav';
 
 const App = () => {
-  //Set language
-  localStorage.setItem('lang', 'ES');
-
   //State
   const [planetInfo, setPlanetInfo] = useState(null);
-  //UseEffect
+
+  //UseEffect for fetch data
   useEffect(() => {
     setTimeout(async () => {
-      const datalang = localStorage.getItem('lang');
-      const applang = `./data/data_${datalang}.json`;
-      const result = await fetch(applang);
-      const data = await result.json();
-      setPlanetInfo(data);
+      fetchData({ setPlanetInfo });
     }, 500);
   }, []);
 
