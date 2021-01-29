@@ -48,7 +48,7 @@ const PlanetCard = ({ planetsData }) => {
     <div>
       {/* If the content haven't been fetch yet... */}
       {!planetsData &&
-        skeletonBlock.map((number, index) => <Skeleton key={index} />)}
+        skeletonBlock.map((eachCard, index) => <Skeleton key={index} />)}
 
       {/* When the content is fetch and stored in the state... */}
       {planetsData && HandlePlanetData()}
