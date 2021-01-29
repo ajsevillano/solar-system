@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { ScrollToTop } from '../utils';
 
 import Home from '../pages/home';
 import Planets from '../pages/planets';
@@ -8,6 +9,7 @@ import Planets from '../pages/planets';
 function Navsticky({ planetInfo }) {
   return (
     <Router>
+      <ScrollToTop />
       <nav className="botton-menu">
         <div className="menu-buttons">
           <svg
