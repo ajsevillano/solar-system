@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { fetchData } from './utils';
 
 //Import Styles
-import './styles/main.scss';
+import './styles/main.css';
 
 //Import components
 import Navsticky from './components/nav';

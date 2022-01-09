@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+.botton-menu {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 20px;
+  font-weight: 600;
+  z-index: 50;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #2c3e50;
+}
+.menu-buttons a {
+  text-decoration: none;
+}
+.menu-buttons a:visited {
+  color: #ce3468;
+}
+
+.card-skeleton {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 20px 0 20px 0px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 100px 20px 50px 20px;
+}
+
+.p-skeleton {
+  width: 93%;
+  height: 16px;
+  margin-bottom: 15px;
+}
+
+.h2-skeleton {
+  width: 28%;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.h1-skeleton {
+  width: 23%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 12px;
+}
+
+.img-skeleton {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-150%);
+}
+
+.img-skeleton,
+.h1-skeleton,
+.h2-skeleton,
+.p-skeleton {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #e7e7e7 8%, #f0f0f0 18%, #e7e7e7 33%);
+  background-size: 800px 104px;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .h2-skeleton {
+    width: 54%;
+  }
+
+  .h1-skeleton {
+    width: 45%;
+  }
+}
+.subheaders {
+  display: flex;
+  flex-direction: row;
+}
+.subheaders h3 {
+  margin: 0px 0 20px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  flex: 1;
+}
+.subheaders p {
+  align-self: flex-end;
+  margin: 0px 20px 20px 0px;
+}
+
+.scroll_cards_container,
+.scroll_others_container,
+.sun-card-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.scroll_others_container {
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+.scroll_card,
+.other_card {
+  margin-left: 20px;
+  max-width: 300px;
+  width: 60%;
+  padding: 10px 10px 10px 10px;
+}
+
+.scroll_card,
+.other_card,
+.sun-card {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.sun-card {
+  height: 100%;
+  margin: 0px 20px 20px 20px;
+  width: 100%;
+  padding: 50px 20px 50px 20px;
+}
+.sun-card img {
+  width: 180px;
+}
+
+.scroll_card:last-child,
+.other_card:last-child {
+  margin-right: 20px;
+}
+
+.scroll_cards_container::after,
+.scroll_others_container::after {
+  content: "";
+  padding-right: 0.02px;
+}
+
+.scroll_cards_container::-webkit-scrollbar,
+.scroll_others_container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll_planet {
+  width: 115px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll_card h2,
+.other_card h2 {
+    font-size: 18px;
+  }
+
+  .scroll_others_container {
+    justify-content: left;
+  }
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
+}
+
+.planet {
+  width: 200px;
+  position: absolute;
+  margin-top: -50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #2c3e50;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 20px 0 20px 0;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 100px 20px 50px 20px;
+}
+.card h1 {
+  font-size: 40px;
+  padding: 0 0 6px 0;
+}
+.card h2 {
+  font-size: 20px;
+  padding: 0 0 6px 0;
+}
+.card p {
+  line-height: 25px;
+  text-align: center;
+}
+
+.last-card {
+  margin-bottom: 100px;
+}
+
+.skeleton-planet-card {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 60%;
+  padding: 10px 10px 10px 10px;
+}
+
+.skeleton-planet-card:last-child {
+  margin-right: 20px;
+}
+
+.skeleton-planet-card-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.skeleton-planet-card-container::after {
+  content: "";
+  padding-right: 0.02px;
+}
+
+.skeleton-planet-card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.img-skeleton-planet {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.h2-skeleton-planet {
+  width: 50%;
+  height: 20px;
+}
+
+.img-skeleton-planet,
+.h2-skeleton-planet {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #e7e7e7 8%, #f0f0f0 18%, #e7e7e7 33%);
+  background-size: 800px 104px;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .h2-skeleton-planet {
+    width: 74%;
+    margin-top: 20px;
+  }
+
+  .img-skeleton-planet {
+    width: 75px;
+    height: 75px;
+    margin: 8px 20px 0 20px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+}
+
+html {
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/img/bg.png");
+  background-image: url("/img/stars.png"), linear-gradient(7deg, #322956 37%, #04243f 100%);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-container h1 {
+  margin: 20px 0 10px 20px;
+  color: white;
+}
+.main-container h2 {
+  color: #2c3e50;
+}
+
+/*# sourceMappingURL=main.css.map */
