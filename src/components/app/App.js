@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { fetchData } from './utils';
+import { fetchData } from '../../utils';
 
 //Import Styles
-import './styles/main.css';
+import '../../styles/main.css';
 
 //Import components
-import Navsticky from './components/nav';
+import Navsticky from '../nav';
 
 const App = () => {
   //State
