@@ -24,6 +24,5 @@ yarn-error.log*
 
 # Others
 /resources
-/public/img
 cmp.sh
 main.css.map
